@@ -729,8 +729,8 @@ body
 #wb_TextArt1
 {
    display: inline-block;
-   width: 416px;
-   height: 176px;
+   width: 280px;
+   height: 170px;
    z-index: 1;
    position: relative;
 }
@@ -791,7 +791,7 @@ body
 }
 #PageHeader_Container
 {
-   width: 317px;
+   width: 320px;
 }
 #wb_welcome
 {
