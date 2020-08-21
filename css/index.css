@@ -174,46 +174,6 @@ body
    width: 100% !important;
 }
 }
-#upStickyLayer
-{
-   background-color: #3F74A4;
-   background-image: none;
-   opacity: 0.77;
-}
-#wb_upIcon
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #3E3E3E;
-   text-align: center;
-   margin: 0;
-   padding: 4px 4px 4px 4px;
-   vertical-align: top;
-}
-#wb_upIcon:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #3E3E3E;
-}
-#upIcon
-{
-   height: 24px;
-   width: 24px;
-}
-#upIcon i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 24px;
-   line-height: 24px;
-   vertical-align: middle;
-   width: 14px;
-}
-#wb_upIcon:hover i
-{
-   color: #007BFF;
-}
 #wb_introText 
 {
    background-color: transparent;
@@ -729,21 +689,21 @@ body
 {
    display: inline-block;
    width: 100%;
-   z-index: 9;
+   z-index: 8;
    vertical-align: top;
 }
 #wb_Breadcrumb2
 {
    display: inline-block;
    width: 100%;
-   z-index: 8;
+   z-index: 7;
    vertical-align: top;
 }
 #wb_Breadcrumb1
 {
    display: inline-block;
    width: 100%;
-   z-index: 7;
+   z-index: 6;
    vertical-align: top;
 }
 #Html1
@@ -751,7 +711,7 @@ body
    display: inline-block;
    width: 100%;
    height: 100px;
-   z-index: 10;
+   z-index: 9;
 }
 #wb_OverlayMenu1
 {
@@ -761,16 +721,6 @@ body
    width: 50px;
    height: 50px;
    z-index: 0;
-}
-#wb_upIcon
-{
-   position: absolute;
-   left: 9px;
-   top: 8px;
-   width: 24px;
-   height: 24px;
-   text-align: center;
-   z-index: 5;
 }
 #Line1
 {
@@ -787,7 +737,7 @@ body
    top: 0;
    right: 0;
    height: 50px;
-   z-index: 17;
+   z-index: 15;
 }
 #PageHeader_Container
 {
@@ -804,18 +754,6 @@ body
    height: 40px;
    text-align: center;
    z-index: 3;
-}
-#upStickyLayer
-{
-   position: fixed;
-   text-align: left;
-   left: auto;
-   right: 25px;
-   top: auto;
-   bottom: 25px;
-   width: 50px;
-   height: 50px;
-   z-index: 14;
 }
 #wb_TextArt1
 {
@@ -935,51 +873,6 @@ body
 {
    padding: 10px 0px 10px 0px;
 }
-#upStickyLayer
-{
-   width: 50px;
-   height: 50px;
-   visibility: visible;
-   display: inline;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: #3F74A4;
-   background-image: none;
-   opacity: 0.77;
-}
-#wb_upIcon
-{
-   left: 9px;
-   top: 8px;
-   width: 24px;
-   height: 24px;
-   visibility: visible;
-   display: inline;
-   margin: 0;
-   padding: 4px 4px 4px 4px;
-   color: #FFFFFF;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#upIcon
-{
-   width: 24px;
-   height: 24px;
-}
-#upIcon i
-{
-   line-height: 24px;
-   font-size: 24px;
-   width: 14px;
-}
 #wb_introText
 {
    visibility: visible;
@@ -1051,8 +944,8 @@ body
    top: 2323px;
    width: 88px;
    height: 31px;
-   visibility: visible;
-   display: inline;
+   visibility: hidden;
+   display: none;
 }
 #Html1
 {
