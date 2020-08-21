@@ -12,7 +12,7 @@
 <script src="skrollr.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.animatesvg.min.js"></script>
-<script src="scrollspy.min.js"></script>
+<script src="wb.overlay.min.js"></script>
 <script src="wwb15.min.js"></script>
 <script>
 $(document).ready(function()
@@ -56,6 +56,13 @@ $(document).ready(function()
       easing: 'linear'
    });
    $("#TextArt1").animatesvg('animate');
+   var $overlaymenu = $('#OverlayMenu1-overlay');
+   $overlaymenu.overlay({'hideTransition':true});
+   $('#OverlayMenu1').on('click', function(e)
+   {
+      $.overlay.show($overlaymenu);
+      return false;
+   });
    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
    if (iOS)
    {
@@ -64,18 +71,15 @@ $(document).ready(function()
 });
 </script>
 </head>
-<body data-spy="scroll">
+<body>
 <div id="PageHeader" data-top="background:rgba(33, 33, 33, 0.0);" data--50-top="background:rgba(33, 33, 33, 1.0);">
 <div id="PageHeader_Container">
-<div id="wb_CssMenu1">
-<ul role="menubar">
-<li class="firstmain"><a role="menuitem" href="" target="_self">POWR&#211;T</a>
-</li>
-<li><a role="menuitem" href="./info.html" target="_self">INFORMACJE</a>
-</li>
-<li><a role="menuitem" href="./galery2.html" target="_self">GALERIA</a>
-</li>
-</ul>
+<div id="wb_OverlayMenu1">
+<a href="#" id="OverlayMenu1">
+<span class="line"></span>
+<span class="line">
+</span><span class="line"></span>
+</a>
 </div>
 </div>
 </div>
@@ -284,6 +288,16 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+</div>
+<div id="OverlayMenu1-overlay">
+<div class="OverlayMenu1">
+<ul class="drilldown-menu" role="menu">
+<li><a role="menuitem" href="./index.html"><i class="fa fa-home overlay-icon"></i>Stron&nbsp;g&#322;&#243;wna</a></li>
+<li><a role="menuitem" href="./info.html"><i class="fa fa-address-book overlay-icon"></i>Informacje</a></li>
+<li><a role="menuitem" href="./galery2.html"><i class="fa fa-camera-retro overlay-icon"></i>Galeria</a></li>
+   </ul>
+</div>
+<a class="close-button" id="OverlayMenu1-close" href="#" role="button" aria-hidden="true"><span></span></a>
 </div>
 </body>
 </html>
