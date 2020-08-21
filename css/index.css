@@ -1058,8 +1058,8 @@ body
 {
    width: 290px;
    height: 100px;
-   visibility: visible;
-   display: inline-block;
+   visibility: hidden;
+   display: none;
 }
 #wb_LayoutGrid1
 {
@@ -1184,7 +1184,7 @@ body
 }
 #wb_OverlayMenu1
 {
-   left: 270px;
+   left: 217px;
    top: 2px;
    width: 50px;
    height: 50px;
