@@ -21,86 +21,6 @@ body
    -moz-transition: all 500ms linear 0ms;
    transition: all 500ms linear 0ms;
 }
-#wb_welcome
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   height: 100vh;
-   background-color: transparent;
-   background-image: url(../images/new.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: fixed;
-   background-size: cover;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#welcome
-{
-   box-sizing: border-box;
-   height: 100vh;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   padding: 50px 0px 50px 0px;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1140px;
-}
-#welcome > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#welcome > .col-1
-{
-   -webkit-flex: 0 0 auto;
-   flex: 0 0 auto;
-}
-#welcome > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   flex-basis: 100%;
-   max-width: 100%;
-   -webkit-align-self: center;
-   align-self: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   text-align: center;
-}
-@media (max-width: 480px)
-{
-#welcome > .col-1
-{
-   -webkit-flex-basis: 100% !important;
-   flex-basis: 100% !important;
-   max-width: 100% !important;
-}
-}
-#welcome-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #3F74A4;
-   opacity: 0.11;
-}
 #wb_intro
 {
    clear: both;
@@ -173,89 +93,6 @@ body
    float: none;
    width: 100% !important;
 }
-}
-#wb_introText 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0px 0px 20px 0px;
-   margin: 0;
-   text-align: center;
-}
-#wb_introText
-{
-   color: #969696;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 15px;
-   line-height: 16px;
-}
-#wb_introText p, #wb_introText ul
-{
-   margin: 0;
-   padding: 0;
-}
-#wb_TextArt1
-{
-   transform: rotate(2deg);
-   transform-origin: 50% 50%;
-}
-#TextArt1{
-   opacity: 0;
-}
-#wb_FontAwesomeIcon6
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #4F4F4F;
-   text-align: center;
-   margin: 0;
-   padding: 4px 4px 4px 4px;
-   -webkit-animation: slide-down-in 2000ms linear 6000ms 1 normal both;
-   -moz-animation: slide-down-in 2000ms linear 6000ms 1 normal both;
-   animation: slide-down-in 2000ms linear 6000ms 1 normal both;
-   vertical-align: top;
-   display:inline-block;
-   position:relative;
-}
-#wb_FontAwesomeIcon6:hover
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-}
-#FontAwesomeIcon6
-{
-   height: 40px;
-   width: 42px;
-}
-#FontAwesomeIcon6 i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 40px;
-   line-height: 40px;
-   vertical-align: middle;
-   width: 25px;
-}
-#wb_FontAwesomeIcon6:hover i
-{
-   color: #78A0BE;
-}
-#Line1
-{
-   border-color: #FFFFFF;
-   border-color: rgba(255,255,255,0.00);
-   border-style: solid;
-   border-bottom-width: 5px;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   height: 0 !important;
-   line-height: 0px !important;
-   margin: 0;
-   padding: 0;
 }
 #wb_LayoutGrid1
 {
@@ -685,25 +522,76 @@ body
 {
    margin: 0px 10px 0px 0px;
 }
+#PhotoGallery1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   width: 100%;
+   height: 100%;
+   table-layout: fixed;
+   display: table;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
+   box-sizing: border-box;
+   float: left;
+   padding: 3px 3px 3px 3px;
+   width: 33.33333333%;
+   text-align: center;
+   vertical-align: top;
+}
+#PhotoGallery1 .thumbnail img
+{
+   border: 0px #000000 solid;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   box-sizing: border-box;
+}
+#PhotoGallery1 .clearfix:before,
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:before,
+#PhotoGallery1 .thumbnails:after
+{
+   display: table;
+   content: " ";
+}
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:after
+{
+   clear: both;
+}
+#PhotoGallery1 .visible-col3
+{
+   display: block;
+}
 #wb_Breadcrumb3
 {
    display: inline-block;
    width: 100%;
-   z-index: 8;
+   z-index: 5;
    vertical-align: top;
 }
 #wb_Breadcrumb2
 {
    display: inline-block;
    width: 100%;
-   z-index: 7;
+   z-index: 4;
    vertical-align: top;
 }
 #wb_Breadcrumb1
 {
    display: inline-block;
    width: 100%;
-   z-index: 6;
+   z-index: 3;
    vertical-align: top;
 }
 #Html1
@@ -711,7 +599,7 @@ body
    display: inline-block;
    width: 100%;
    height: 100px;
-   z-index: 9;
+   z-index: 6;
 }
 #wb_OverlayMenu1
 {
@@ -722,22 +610,22 @@ body
    height: 50px;
    z-index: 0;
 }
-#Line1
+#wb_PhotoGallery1
 {
-   display: block;
+   display: inline-block;
    width: 100%;
-   z-index: 2;
+   z-index: 1;
 }
 #PageHeader
 {
    position: fixed;
-   overflow: hidden;
+   overflow: auto;
    text-align: center;
    left: 0;
    top: 0;
    right: 0;
    height: 50px;
-   z-index: 15;
+   z-index: 11;
 }
 #PageHeader_Container
 {
@@ -746,22 +634,6 @@ body
    margin-left: auto;
    margin-right: auto;
    text-align: left;
-}
-#wb_FontAwesomeIcon6
-{
-   display: inline-block;
-   width: 42px;
-   height: 40px;
-   text-align: center;
-   z-index: 3;
-}
-#wb_TextArt1
-{
-   display: inline-block;
-   width: 416px;
-   height: 176px;
-   z-index: 1;
-   position: relative;
 }
 @media only screen and (max-width: 969px)
 {
@@ -785,50 +657,6 @@ body
 #PageHeader_Container
 {
    width: 320px;
-}
-#wb_welcome
-{
-   visibility: visible;
-   display: table;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: url(../images/new.png);
-   background-repeat: no-repeat;
-   background-position: center center;
-   background-attachment: scroll;
-   background-size: cover;
-}
-#wb_welcome
-{
-   margin-top: 0px;
-   margin-bottom: 0px;
-}
-#welcome
-{
-   padding: 50px 0px 50px 0px;
-}
-#welcome > .col-1
-{
-   padding-right: 15px;
-   padding-left: 15px;
-}
-#welcome > .col-1
-{
-   display: block;
-   -webkit-flex-basis: 100%;
-   flex-basis: 100%;
-   max-width: 100%;
-   border: 0px solid #FFFFFF;
-   border-radius: 0px;
-   -webkit-align-self: center;
-   align-self: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   text-align: center;
 }
 #wb_intro
 {
@@ -872,71 +700,6 @@ body
 #intro > .row > .col-1 > .col-1-padding
 {
    padding: 10px 0px 10px 0px;
-}
-#wb_introText
-{
-   visibility: visible;
-   display: block;
-   background-color: transparent;
-   background-image: none;
-}
-#wb_introText
-{
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 15px;
-   margin: 0;
-   padding: 0px 0px 20px 0px;
-   text-align: center;
-   line-height: 16px;
-}
-#wb_TextArt1
-{
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-}
-#wb_FontAwesomeIcon6
-{
-   width: 42px;
-   height: 40px;
-   visibility: visible;
-   display: inline-block;
-   margin: 0;
-   padding: 4px 4px 4px 4px;
-   color: #FFFFFF;
-   font-size: 8px;
-   font-family: Arial;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   background-color: transparent;
-   background-image: none;
-}
-#FontAwesomeIcon6
-{
-   width: 42px;
-   height: 40px;
-}
-#FontAwesomeIcon6 i
-{
-   line-height: 40px;
-   font-size: 40px;
-   width: 25px;
-}
-#Line1
-{
-   width: 100%;
-   height: 5px;
-   visibility: visible;
-   display: block;
-   margin: 0;
-}
-#Line1
-{
-   border-color: #FFFFFF;
-   border-color: rgba(255,255,255,0.00);
-   border-bottom-width: 5px;
 }
 #BuildWith1
 {
@@ -1111,5 +874,28 @@ body
 {
    font-size: 19px;
    text-align: center;
+}
+#wb_PhotoGallery1
+{
+   width: 100%;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   color: #000000;
+   font-size: 13px;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   background-color: transparent;
+   background-image: none;
+}
+#PhotoGallery1 .thumbnail
+{
+   width: 33.33333333%;
+}
+#PhotoGallery1 .visible-col3
+{
+   display: block;
 }
 }

@@ -7,11 +7,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/plotki.css" rel="stylesheet">
-<link href="css/info.css" rel="stylesheet">
+<link href="css/galery.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="skrollr.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wb.overlay.min.js"></script>
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
+<script src="fancybox/jquery.easing-1.3.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 <script src="wwb15.min.js"></script>
 <script>
 $(document).ready(function()
@@ -50,6 +54,8 @@ $(document).ready(function()
       $.overlay.show($overlaymenu);
       return false;
    });
+   $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
+   $("a[rel^='PhotoGallery1']").fancybox({});
 });
 </script>
 </head>
@@ -70,63 +76,51 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_introText">
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p style="color:#969696;">Cena domku:</p>
-<p style="color:#969696;">-&nbsp; sezon wysoki (26.04 - 05.05, 14.06 - 31.08, 23.12 - 05.01) 340 zł za 1 dobę</p>
-<p style="color:#969696;">-&nbsp; sezon niski (pozostała część roku z wyłączeniem sezonu wysokiego) 300 zł za 1 dobę</p>
-<p style="color:#969696;">- za pieska/kota pobieramy opłaty: weekend 500 zł, tydzień 70 zł, dwa tygodnie 110 zł (opłata związana jest kosztami ponownego przystosowania domku dla kolejnych letników mogacych być alergikami itp)</p>
-<p style="color:#969696;">Podana cena jest ceną brutto i dotyczy wynajmu przy pobycie minimum weekendu tj. 3 dni (2 noclegów).</p>
-<p style="color:#969696;">Koszt najmu na jedna dobę ustalany jest indywidualnie.</p>
-<p style="color:#969696;">Na wyposażeniu domków nie posiadamy ręczników.</p>
-<p style="color:#969696;">Doba hotelowa:</p>
-<p style="color:#969696;">od 16:00 w dniu przyjazdu</p>
-<p style="color:#969696;">do 12:00 w dniu wyjazdu</p>
-<p style="color:#969696;">Gwarancją rezerwacji jest dokonanie wpłaty bezzwrotnej zaliczki w wysokości 10-30%. Zaliczka&nbsp; jest płatna&nbsp; w ciągu 7 dni od daty dokonania rezerwacji na konto podane w e-mailu (lub szybciej, jeśli termin przyjazdu jest bliższy).</p>
-<p>&nbsp;</p>
-<p style="color:#969696;">Dodatkowo pobieramy zwrotną kaucję w wysokości 300 zł, płatną najpóźniej w dniu odebrania kluczy a zwracaną na konto z którego została przelana, najpóźniej dnia następnego po opuszczeniu domku</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p style="font-weight:bold;color:#969696;">Nurkowanie:</p>
-<p style="font-weight:bold;">&nbsp;</p>
-<p style="font-weight:bold;color:#969696;">Zapraszamy do zapoznania się z ofertą na stronie: www.deepdiver.com.pl</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<div id="wb_PhotoGallery1">
+<div id="PhotoGallery1">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="images/0.jpg" data-rel="PhotoGallery1"><img alt="" src="images/0.jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/1.jpg" data-rel="PhotoGallery1"><img alt="" src="images/1.jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/2.jpg" data-rel="PhotoGallery1"><img alt="" src="images/2.jpg"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/3.JPG" data-rel="PhotoGallery1"><img alt="" src="images/3.JPG"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/4.JPG" data-rel="PhotoGallery1"><img alt="" src="images/4.JPG"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/5.jpg" data-rel="PhotoGallery1"><img alt="" src="images/5.jpg"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (1).jpg" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (1).jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (2).jpg" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (2).jpg"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (3).jpg" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (3).jpg"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (16).JPG" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (16).JPG"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (17).JPG" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (17).JPG"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="images/Domek nr 13  (18).JPG" data-rel="PhotoGallery1"><img alt="" src="images/Domek nr 13  (18).JPG"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div>
 </div>
 </div>
 </div>
